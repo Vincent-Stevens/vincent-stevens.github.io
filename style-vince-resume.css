@@ -1,0 +1,103 @@
+/** 
+ * Description:	CS3744 Project 2 - A Stylish Resume
+ * Author:		Vince Stevens
+ * Date:		17 Feb 2021
+ */
+
+/*Creates a global variable to set banner size = 9x font size*/
+:root {
+	--banner-size: 9em;
+}
+
+/*Creates padding for each section
+	Hyperlinking will not work exactly right in every browser width - 
+	Dynamic section size can only be achieved with javascript*/
+section {
+	padding-top: var(--banner-size);
+	padding-bottom: var(--banner-size);
+	font-family:monospace;
+	scroll-margin-top: 50px;
+	display: inline-block;
+	width: 100%;
+
+}
+
+/*Edits only the page banner*/
+#page-banner {
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: fit-content;
+	background-color: #EE6352;
+	text-align:center;
+	font-family:system-ui;
+	border-style: solid;
+	border-color: #253237;
+}
+
+/*Changes the background color of the entire body*/
+body {
+	background-color: #7C9299;
+}
+
+/*Aligns the data with the contact-info id to center*/
+#contact-info {
+	text-align: center;
+}
+
+/*Add borders, two columns for items in the address class*/
+.address{
+    border-style: ridge;
+    box-sizing: border-box;
+    border-color: #F8F8FF;
+    float: left;
+    width: 50%;
+    display:inline-block;
+}
+
+/*Edits the data with both the address and clearance-level classes*/
+.address.clearance-level {
+	float:none;
+}
+
+/*Changes all unordered lists from disc to circle*/
+ul {
+	list-style-type: circle;
+}
+
+/*Changes the gap between all list items*/
+li {
+	margin: 15px 0;
+}
+
+/*Edits the skills-section class*/
+.skills-section {
+	float: left;
+	width: 50%;
+}
+
+/*Edits the data with the related-experience id to display without float*/
+#related-experience {
+	float: none;
+	display: inline-block;
+}
+
+/*Edits the data with the education id to display without float*/
+#education {
+	float: none;
+	display: inline-block;
+}
+
+/*Sets all section headers to match the sticky banner*/
+.section-header {
+	background-color: #EE6352;
+	border-style:solid;
+	border-color:#253237;
+	text-align: center;
+}
+
+/*Edits the space between entries for data in the experience section class*/
+.experience-section {
+	margin: 50px 0;
+}
