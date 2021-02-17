@@ -6,7 +6,7 @@
 
 /*Creates a global variable to set banner size = 9x font size*/
 :root {
-	--banner-size: 9em;
+	--banner-size: 10em;
 }
 
 /*Creates padding for each section
